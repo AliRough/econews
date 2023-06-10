@@ -1,0 +1,229 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  margin-bottom: 0;
+  padding-right: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "iransans";
+  background-color: #f2f2f2;
+}
+
+.w-\/3 {
+  width: 33% !important;
+}
+
+.w-1\/5 {
+  width: 20% !important;
+}
+
+.w-1\/6 {
+  width: 16.66% !important;
+}
+
+.date-container {
+  height: max-content;
+  padding: 10px 0;
+  font-size: 12px;
+  width: 13rem;
+}
+
+.top-list-item {
+  list-style-type: none;
+  font-size: 11px;
+  color: #222;
+  font-weight: 600;
+  padding: 10px;
+  width: max-content;
+}
+
+.top-list-item:hover {
+  background-color: var(--color-3);
+}
+
+.top-list-item > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.top-list-container {
+  display: flex;
+}
+
+.search-input {
+  font-size: 11px;
+  border: 0;
+  background-color: var(--color-3);
+  padding: 5px 15px;
+}
+
+.search-icon {
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.main-header {
+  background-color: var(--primary);
+  position: relative;
+}
+
+.logo {
+  width: max-content;
+  height: max-content;
+}
+
+.main-list-container {
+  list-style-type: none;
+  height: 20px;
+}
+
+.main-list-container > li {
+  padding: 1.5rem 0;
+}
+
+.main-list-container > li > a {
+  text-decoration: none;
+  color: white;
+  margin: 0 5px;
+}
+
+.sub-container {
+  transition: all 1000ms;
+  height: 0px;
+  position: absolute;
+  left: 0;
+  top: 90%;
+  background: #000;
+  color: white;
+  width: 100%;
+  display: flex;
+  padding: 0 20rem;
+  z-index: 99;
+}
+
+.main-list-container > li:hover {
+  background-color: rgb(53, 53, 53, 0.4);
+}
+
+.main-list-container > li:hover > .sub-container,
+.sub-container:hover {
+  height: min-content;
+}
+
+.sub-container > .dropdown-hover {
+  display: none;
+}
+
+.main-list-container > li:hover .sub-container > .dropdown-hover {
+  display: block;
+}
+
+.sub-item-container {
+  background-color: rgba(49, 49, 49, 0.5);
+}
+
+.sub-item-title {
+  background-color: rgba(119, 119, 119, 0.5);
+  text-align: center;
+}
+
+.sub-item-container > li {
+  width: 50%;
+  color: white;
+  font-weight: 500;
+  font-size: 13px;
+  padding: 0.5rem;
+  transition: all 0.5s;
+}
+
+.sub-item-container > li:hover {
+  background-color: var(--primary);
+  padding-right: 0.2rem;
+}
+
+.data-sub-wraper {
+  display: flex;
+  width: 100%;
+  padding: 1rem 1rem;
+}
+
+.data-sub-wraper > li {
+  width: 100%;
+}
+
+.data-sub-wraper a:hover {
+  background-color: var(--primary);
+}
+
+.data-sub-wraper .azad-hover {
+  background-color: white;
+}
+
+.header-bottom {
+  background: var(--color-3);
+}
+
+.header-bottom-list > li:hover .dropdown-hover {
+  display: block;
+  background: #000;
+  top: 0;
+}
+
+.bottom-header {
+  background-color: var(--color-3);
+  position: relative;
+}
+
+.bottom-list-container > li:hover .sub-container > .dropdown-hover {
+  display: block;
+}
+
+.bottom-list-container > li {
+  height: 100%;
+  padding: 10px 10px;
+  font-size: 13px;
+  border: #000 !important;
+}
+
+.bottom-list-container > li:hover {
+  background-color: rgb(53, 53, 53, 0.4);
+}
+
+.bottom-list-container > li:hover > .sub-container,
+.sub-container:hover {
+  height: min-content;
+}
+
+.bottom-list-container .sub-container {
+  background: rgb(196, 196, 196);
+  color: #000;
+}
+.bottom-list-container > li:hover:nth-child(3n - 2),
+.bottom-list-container > li:nth-child(3n-2) a:hover {
+  background-color: rgb(72, 61, 139);
+  color: #fff;
+}
+.bottom-list-container > li:hover:nth-child(3n - 1),
+.bottom-list-container > li:nth-child(3n-1) a:hover {
+  background-color: rgb(1, 133, 89);
+  color: #fff;
+}
+.bottom-list-container > li:hover:nth-child(3n),
+.bottom-list-container > li:nth-child(3n) a:hover {
+  background-color: rgb(201, 7, 7);
+  color: #fff;
+}

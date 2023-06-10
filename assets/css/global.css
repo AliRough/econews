@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "iransans";
+  src: url("/assets/fonts/iransans/IRANSansWeb.eot");
+  src: url("/assets/fonts/iransans/IRANSansWeb.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/iransans/IRANSansWeb.woff") format("woff"),
+    url("/assets/fonts/iransans/IRANSansWeb.ttf") format("truetype");
+}
+
+:root {
+  --primary: #b71818;
+  --secondary: #001648;
+  --color-3: #e4e4e4;
+}
+
+.text-custom-primary{
+  color: var(--primary);
+}
+
+.btn-gray {
+  border: 0;
+  background-color: rgb(101, 101, 101);
+  border-radius: 2px;
+  padding: 4px;
+  font-size: 12px;
+  height: max-content;
+  color: white;
+  margin: 4px;
+}
+
+.btn-gray:hover {
+  background-color: rgb(126, 124, 124);
+}

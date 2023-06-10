@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="components/bootstrap/dist/css/bootstrap.rtl.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="components/fontawesome-free-6.4.0-web/css/all.css"
+    />
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>خبرگزاری اقتصادی ایران | Economic News Agency</title>
+  </head>
+  <body>
+    <header>
+      <div class="container d-flex">
+        <div class="col d-flex">
+          <div class="date-container d-flex align-items-center">
+            <i class="fa-regular fa-calendar-days"></i>
+            <span id="date" class="text-center mx-1">
+              سه شنبه ۱۶ خرداد ۱۴۰۲ ۰۳:۳۳:۱۳
+            </span>
+            <i class="fa-regular fa-clock"></i>
+          </div>
+          <button class="border-0 btn-gray">
+            <i class="fa-solid fa-user bg-transparent text-white"></i>
+            ورود / عضویت
+            <i class="fa-solid fa-chevron-down bg-transparent text-white"></i>
+          </button>
+        </div>
+        <div class="col d-flex">
+          <ul
+            class="top-list-container border-start border-dark border-opacity-25"
+          >
+            <li class="top-list-item ps-1">
+              <a href="#"
+                ><i class="fa-sharp fa-solid fa-coins"></i> قیمت طلا و سکه</a
+              >
+            </li>
+            <li class="top-list-item">
+              <a href="#"><i class="fa-solid fa-fire"></i> نفت و سوخت</a>
+            </li>
+            <li class="top-list-item">
+              <a href="#"
+                ><i class="fa-solid fa-bars-progress"></i> فلزات پایه</a
+              >
+            </li>
+            <li class="top-list-item">
+              <a href="#"
+                ><i class="fa-solid fa-earth-europe"></i> کالاهای جهانی</a
+              >
+            </li>
+            <li class="top-list-item">
+              <a href="#"><i class="fa-solid fa-earth-asia"></i> بورس جهانی</a>
+            </li>
+            <li class="top-list-item">
+              <a href="#"><i class="fa-solid fa-box-archive"></i> آرشیو</a>
+            </li>
+          </ul>
+          <div class="position-relative d-flex align-items-center mx-3">
+            <input type="text" class="search-input" placeholder="جستجو ..." />
+            <i
+              class="search-icon fa-solid fa-magnifying-glass position-absolute end-0 bg-transparent me-1"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <div class="main-header">
+        <div
+          class="container bg-transparent py-1 d-flex justify-content-between align-items-center"
+        >
+          <img
+            src="/./assets/img/logo.png"
+            alt=""
+            class="bg-transparent logo"
+          />
+          <ul class="main-list-container d-flex h-100">
+            <li>
+              <a href="#">
+                اخبار و رویدادها<i class="fa-solid fa-sort-down ms-2"></i
+              ></a>
+              <div class="sub-container justify-content-between">
+                <div class="m-2 w-1/3 dropdown-hover">
+                  <span class="sub-item-title d-block">دسته بندی عمومی</span>
+                  <ul class="d-flex flex-wrap sub-item-container">
+                    <li><a href="#">عناوین کل سرویس</a></li>
+                    <li><a href="#">سیاست</a></li>
+                    <li><a href="#">فرهنگ</a></li>
+                    <li><a href="#">ورزش</a></li>
+                    <li><a href="#">جامعه</a></li>
+                    <li><a href="#">فناوری</a></li>
+                    <li><a href="#">سلامت</a></li>
+                    <li><a href="#">استانها</a></li>
+                    <li><a href="#">گفتگو</a></li>
+                    <li><a href="#">یادداشت</a></li>
+                    <li><a href="#">توئیت</a></li>
+                    <li><a href="#">اینستاگرام</a></li>
+                    <li><a href="#">پژوهش</a></li>
+                  </ul>
+                </div>
+                <div class="m-2 w-1/3 dropdown-hover">
+                  <span class="sub-item-title d-block"
+                    >دسته بندی تخصصی اقتصاد</span
+                  >
+                  <ul class="d-flex flex-wrap sub-item-container">
+                    <li class="w-1/3"><a href="#"> عناوین کل سرویس</a></li>
+                    <li class="w-1/3"><a href="#"> اکو</a></li>
+                    <li class="w-1/3"><a href="#"> کلان و بودجه</a></li>
+                    <li class="w-1/3"><a href="#"> بانک</a></li>
+                    <li class="w-1/3"><a href="#"> بیمه</a></li>
+                    <li class="w-1/3"><a href="#"> بورس</a></li>
+                    <li class="w-1/3"><a href="#"> نفت و گاز</a></li>
+                    <li class="w-1/3"><a href="#"> پتروشیمی </a></li>
+                    <li class="w-1/3"><a href="#"> صنعت آب و برق</a></li>
+                    <li class="w-1/3"><a href="#"> صنایع و معادن</a></li>
+                    <li class="w-1/3"><a href="#"> تجارت و بازرگانی</a></li>
+                    <li class="w-1/3"><a href="#"> کار و تعاون</a></li>
+                    <li class="w-1/3"><a href="#"> اقتصاد شهری</a></li>
+                    <li class="w-1/3"><a href="#"> اقتصاددیجیتالی</a></li>
+                    <li class="w-1/3">
+                      <a href="#"> کشاورزی و دامپروری</a>
+                    </li>
+                    <li>
+                      <a href="#" class="sub-item w-1/3"> اخبارشرکت ها</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="m-2 w-1/3 dropdown-hover">
+                  <span class="sub-item-title d-block">دسته بندی ویژه</span>
+                  <ul class="d-flex flex-wrap sub-item-container">
+                    <li><a href="#">عناوین کل سرویس</a></li>
+                    <li><a href="#">بازار سرمایه</a></li>
+                    <li><a href="#">چهره ‎های شاخص</a></li>
+                    <li><a href="#">اقتصاد دانش بنیان</a></li>
+                    <li><a href="#">اقتصاد فرهنگ و هنر</a></li>
+                    <li><a href="#">اقتصاد ورزش</a></li>
+                    <li><a href="#">خودرو</a></li>
+                    <li><a href="#">راه و شهرسازی</a></li>
+                    <li><a href="#">اقتصاد سبز</a></li>
+                    <li><a href="#">توریسم و گردشگری</a></li>
+                    <li><a href="#">سبک زندگی</a></li>
+                    <li><a href="#">راهنمای بازار</a></li>
+                    <li><a href="#">اقتصاد سلامت</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#">
+                نرخ ها و داده ها<i class="fa-solid fa-sort-down ms-2"></i
+              ></a>
+              <div class="sub-container">
+                <div class="dropdown-hover w-100">
+                  <ul class="data-sub-wraper">
+                    <li class="ps-1">
+                      <a class="d-flex p-2 align-items-center" href="#"
+                        ><i class="fa-solid fa-angle-left pe-2 text-danger"></i>
+                        ارزها</a
+                      >
+                    </li>
+                    <li class="border-start ps-1 border-secondary">
+                      <a class="d-flex p-2 align-items-center" href="#"
+                        ><i class="fa-solid fa-angle-left pe-2 text-danger"></i>
+                        قیمت طلا و سکه</a
+                      >
+                    </li>
+                    <li class="border-start ps-1 border-secondary">
+                      <a class="d-flex p-2 align-items-center" href="#"
+                        ><i class="fa-solid fa-angle-left pe-2 text-danger"></i>
+                        نفت و سوخت</a
+                      >
+                    </li>
+                    <li class="border-start ps-1 border-secondary">
+                      <a class="d-flex p-2 align-items-center" href="#"
+                        ><i class="fa-solid fa-angle-left pe-2 text-danger"></i>
+                        فلزات پایه</a
+                      >
+                    </li>
+                    <li class="border-start ps-1 border-secondary">
+                      <a class="d-flex p-2 align-items-center" href="#"
+                        ><i class="fa-solid fa-angle-left pe-2 text-danger"></i>
+                        کالاهای جهانی</a
+                      >
+                    </li>
+                    <li class="border-start ps-1 border-secondary">
+                      <a class="d-flex p-2 align-items-center" href="#"
+                        ><i class="fa-solid fa-angle-left pe-2 text-danger"></i>
+                        بورس جهانی</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#">
+                استان‌ها<i class="fa-solid fa-sort-down ms-2"></i
+              ></a>
+              <div class="sub-container">
+                <div class="dropdown-hover w-100">
+                  <ul class="data-sub-wraper flex-wrap">
+                    <li class="ps-1 w-1/6 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#"
+                        ><i class="fa-solid fa-angle-left pe-2 text-danger"></i>
+                        آذربایجان شرقی
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 w-1/6 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#"
+                        ><i class="fa-solid fa-angle-left pe-2 text-danger"></i>
+                        آذربایجان غربی
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 w-1/6 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#"
+                        ><i class="fa-solid fa-angle-left pe-2 text-danger"></i>
+                        اردبیل
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 w-1/6 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#"
+                        ><i class="fa-solid fa-angle-left pe-2 text-danger"></i>
+                        اصفهان
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 w-1/6 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#"
+                        ><i class="fa-solid fa-angle-left pe-2 text-danger"></i>
+                        البرز
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 w-1/6 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#"
+                        ><i class="fa-solid fa-angle-left pe-2 text-danger"></i>
+                        ایلام
+                      </a>
+                    </li>
+                    <li class="\ ps-1 w-1/6 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#"
+                        ><i class="fa-solid fa-angle-left pe-2 text-danger"></i>
+                        بوشهر
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 w-1/6 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#"
+                        ><i class="fa-solid fa-angle-left pe-2 text-danger"></i>
+                        تهران
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 w-1/6 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#"
+                        ><i class="fa-solid fa-angle-left pe-2 text-danger"></i>
+                        چهارمحال و بختیاری
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 w-1/6 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#"
+                        ><i class="fa-solid fa-angle-left pe-2 text-danger"></i>
+                        خراسان جنوبی
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 w-1/6 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#"
+                        ><i class="fa-solid fa-angle-left pe-2 text-danger"></i>
+                        خراسان رضوی
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 w-1/6 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#"
+                        ><i class="fa-solid fa-angle-left pe-2 text-danger"></i>
+                        خراسان شمالی
+                      </a>
+                    </li>
+                    <li class="\ ps-1 w-1/6 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#"
+                        ><i class="fa-solid fa-angle-left pe-2 text-danger"></i>
+                        خوزستان
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 w-1/6 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#"
+                        ><i class="fa-solid fa-angle-left pe-2 text-danger"></i>
+                        زنجان
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 w-1/6 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#"
+                        ><i class="fa-solid fa-angle-left pe-2 text-danger"></i>
+                        سمنان
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 w-1/6 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#"
+                        ><i class="fa-solid fa-angle-left pe-2 text-danger"></i>
+                        سیستان و بلوچستان
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 w-1/6 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#"
+                        ><i class="fa-solid fa-angle-left pe-2 text-danger"></i>
+                        فارس
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 w-1/6 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#"
+                        ><i class="fa-solid fa-angle-left pe-2 text-danger"></i>
+                        قزوین
+                      </a>
+                    </li>
+                    <li class="\ ps-1 w-1/6 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#"
+                        ><i class="fa-solid fa-angle-left pe-2 text-danger"></i>
+                        قم
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 w-1/6 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#"
+                        ><i class="fa-solid fa-angle-left pe-2 text-danger"></i>
+                        کردستان
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 w-1/6 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#"
+                        ><i class="fa-solid fa-angle-left pe-2 text-danger"></i>
+                        کرمان
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 w-1/6 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#"
+                        ><i class="fa-solid fa-angle-left pe-2 text-danger"></i>
+                        کرمانشاه
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 w-1/6 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#"
+                        ><i class="fa-solid fa-angle-left pe-2 text-danger"></i>
+                        کهگیلویه و بویراحمد
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 w-1/6 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#"
+                        ><i class="fa-solid fa-angle-left pe-2 text-danger"></i>
+                        گلستان
+                      </a>
+                    </li>
+                    <li class="\ ps-1 w-1/6 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#"
+                        ><i class="fa-solid fa-angle-left pe-2 text-danger"></i>
+                        گیلان
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 w-1/6 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#"
+                        ><i class="fa-solid fa-angle-left pe-2 text-danger"></i>
+                        لرستان
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 w-1/6 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#"
+                        ><i class="fa-solid fa-angle-left pe-2 text-danger"></i>
+                        مازندران
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 w-1/6 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#"
+                        ><i class="fa-solid fa-angle-left pe-2 text-danger"></i>
+                        مرکزی
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 w-1/6 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#"
+                        ><i class="fa-solid fa-angle-left pe-2 text-danger"></i>
+                        هرمزگان
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 w-1/6 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#"
+                        ><i class="fa-solid fa-angle-left pe-2 text-danger"></i>
+                        همدان
+                      </a>
+                    </li>
+                    <li class="ps-1 w-1/6 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#"
+                        ><i class="fa-solid fa-angle-left pe-2 text-danger"></i>
+                        یزد
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#">
+                مناطق آزاد<i class="fa-solid fa-sort-down ms-2"></i
+              ></a>
+              <div class="sub-container">
+                <div class="dropdown-hover w-100">
+                  <ul class="data-sub-wraper justify-content-center">
+                    <li class="w-auto rounded m-2 overflow-hidden">
+                      <a
+                        class="azad-hover d-flex p-2 align-items-center"
+                        href="#"
+                      >
+                        <img class="" src="assets/img/header/maku.png" alt="" />
+                      </a>
+                    </li>
+                    <li class="w-auto rounded m-2 overflow-hidden">
+                      <a
+                        class="azad-hover d-flex p-2 align-items-center"
+                        href="#"
+                      >
+                        <img class="" src="assets/img/header/kish.png" alt="" />
+                      </a>
+                    </li>
+                    <li class="w-auto rounded m-2 overflow-hidden">
+                      <a
+                        class="azad-hover d-flex p-2 align-items-center"
+                        href="#"
+                      >
+                        <img
+                          class=""
+                          src="assets/img/header/qeshm.png"
+                          alt=""
+                        />
+                      </a>
+                    </li>
+                    <li class="w-auto rounded m-2 overflow-hidden">
+                      <a
+                        class="azad-hover d-flex p-2 align-items-center"
+                        href="#"
+                      >
+                        <img
+                          class=""
+                          src="assets/img/header/chabahar.png"
+                          alt=""
+                        />
+                      </a>
+                    </li>
+                    <li class="w-auto rounded m-2 overflow-hidden">
+                      <a
+                        class="azad-hover d-flex p-2 align-items-center"
+                        href="#"
+                      >
+                        <img
+                          class=""
+                          src="assets/img/header/anzali.png"
+                          alt=""
+                        />
+                      </a>
+                    </li>
+                    <li class="w-auto rounded m-2 overflow-hidden">
+                      <a
+                        class="azad-hover d-flex p-2 align-items-center"
+                        href="#"
+                      >
+                        <img
+                          class=""
+                          src="assets/img/header/arvand.png"
+                          alt=""
+                        />
+                      </a>
+                    </li>
+                    <li class="w-auto rounded m-2 overflow-hidden">
+                      <a
+                        class="azad-hover d-flex p-2 align-items-center"
+                        href="#"
+                      >
+                        <img class="" src="assets/img/header/aras.png" alt="" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#">
+                چندرسانه‌ای<i class="fa-solid fa-sort-down ms-2"></i
+              ></a>
+              <div class="sub-container">
+                <div class="dropdown-hover w-100">
+                  <ul class="data-sub-wraper">
+                    <li class="ps-1 border-secondary">
+                      <a class="d-flex p-2 align-items-center" href="#"
+                        ><i class="fa-solid fa-angle-left pe-2 text-danger"></i>
+                        فیلم</a
+                      >
+                    </li>
+                    <li class="border-start ps-1 border-secondary">
+                      <a class="d-flex p-2 align-items-center" href="#"
+                        ><i class="fa-solid fa-angle-left pe-2 text-danger"></i>
+                        صوت</a
+                      >
+                    </li>
+                    <li class="border-start ps-1 border-secondary">
+                      <a class="d-flex p-2 align-items-center" href="#"
+                        ><i class="fa-solid fa-angle-left pe-2 text-danger"></i>
+                        کلیپ</a
+                      >
+                    </li>
+                    <li class="border-start ps-1 border-secondary">
+                      <a class="d-flex p-2 align-items-center" href="#"
+                        ><i class="fa-solid fa-angle-left pe-2 text-danger"></i>
+                        تیزر</a
+                      >
+                    </li>
+                    <li class="border-start ps-1 border-secondary">
+                      <a class="d-flex p-2 align-items-center" href="#"
+                        ><i class="fa-solid fa-angle-left pe-2 text-danger"></i>
+                        عکس</a
+                      >
+                    </li>
+                    <li class="border-start ps-1 border-secondary">
+                      <a class="d-flex p-2 align-items-center" href="#"
+                        ><i class="fa-solid fa-angle-left pe-2 text-danger"></i>
+                        اینفوگرافی</a
+                      >
+                    </li>
+                    <li class="border-start ps-1 border-secondary">
+                      <a class="d-flex p-2 align-items-center" href="#"
+                        ><i class="fa-solid fa-angle-left pe-2 text-danger"></i>
+                        کاریکاتور</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#"> نیازمندی ها</a>
+            </li>
+          </ul>
+          <img src="assets/img/mahar.png" alt="" class="bg-transparent" />
+        </div>
+      </div>
+      <div class="bottom-header">
+        <div
+          class="container bg-transparent d-flex justify-content-between align-items-center"
+        >
+          <ul class="bottom-list-container d-flex h-100">
+            <li>
+              <a href="#"> جهان</a>
+            </li>
+            <li>
+              <a href="#"> اکو</a>
+              <div class="sub-container">
+                <div class="dropdown-hover w-100">
+                  <ul class="data-sub-wraper flex-wrap">
+                    <li class="border-start ps-1 border-secondary w-1/6 my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        صفحه اصلی اکو
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary w-1/6 my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        ایران
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary w-1/6 my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        ترکیه
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary w-1/6 my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        آذربایجان
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary w-1/6 my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        ترکمنستان
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary w-1/6 my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        تاجیکستان
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary w-1/6 my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        قزاقستان
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary w-1/6 my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        قرقیزستان
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary w-1/6 my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        ازبکستان
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary w-1/6 my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        افغانستان
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary w-1/6 my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        پاکستان
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary w-1/6 my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        عناوین کل اخبار
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#"> کلان و بودجه</a>
+              <div class="sub-container">
+                <div class="dropdown-hover w-100">
+                  <ul class="data-sub-wraper">
+                    <li class="ps-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        ارزها</a
+                      >
+                    </li>
+                    <li class="border-start ps-1 border-secondary">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        قیمت طلا و سکه</a
+                      >
+                    </li>
+                    <li class="border-start ps-1 border-secondary">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        نفت و سوخت</a
+                      >
+                    </li>
+                    <li class="border-start ps-1 border-secondary">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        فلزات پایه</a
+                      >
+                    </li>
+                    <li class="border-start ps-1 border-secondary">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        کالاهای جهانی</a
+                      >
+                    </li>
+                    <li class="border-start ps-1 border-secondary">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بورس جهانی</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#"> بانک</a>
+              <div class="sub-container">
+                <div class="dropdown-hover w-100">
+                  <ul class="data-sub-wraper">
+                    <li class="ps-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        ارزها</a
+                      >
+                    </li>
+                    <li class="border-start ps-1 border-secondary">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        قیمت طلا و سکه</a
+                      >
+                    </li>
+                    <li class="border-start ps-1 border-secondary">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        نفت و سوخت</a
+                      >
+                    </li>
+                    <li class="border-start ps-1 border-secondary">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        فلزات پایه</a
+                      >
+                    </li>
+                    <li class="border-start ps-1 border-secondary">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        کالاهای جهانی</a
+                      >
+                    </li>
+                    <li class="border-start ps-1 border-secondary">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بورس جهانی</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#"> بیمه</a>
+              <div class="sub-container">
+                <div class="dropdown-hover w-100">
+                  <ul class="data-sub-wraper">
+                    <li class="ps-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        ارزها</a
+                      >
+                    </li>
+                    <li class="border-start ps-1 border-secondary">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        قیمت طلا و سکه</a
+                      >
+                    </li>
+                    <li class="border-start ps-1 border-secondary">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        نفت و سوخت</a
+                      >
+                    </li>
+                    <li class="border-start ps-1 border-secondary">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        فلزات پایه</a
+                      >
+                    </li>
+                    <li class="border-start ps-1 border-secondary">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        کالاهای جهانی</a
+                      >
+                    </li>
+                    <li class="border-start ps-1 border-secondary">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بورس جهانی</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#"> بورس </a>
+            </li>
+            <li>
+              <a href="#"> نفت و گاز</a>
+            </li>
+            <li>
+              <a href="#"> پتروشیمی</a>
+            </li>
+            <li>
+              <a href="#"> صنعت آب و برق</a>
+            </li>
+            <li>
+              <a href="#"> صنایع و معادن </a>
+            </li>
+            <li>
+              <a href="#"> تجارت و بازرگانی</a>
+            </li>
+            <li>
+              <a href="#"> کار و تعاون</a>
+            </li>
+            <li>
+              <a href="#"> اقتصاد شهری</a>
+            </li>
+            <li>
+              <a href="#"> اقتصاددیجیتالی</a>
+            </li>
+            <li>
+              <a href="#"> کشاورزی و دامپروری</a>
+            </li>
+            <li>
+              <a href="#"> اخبارشرکت ها</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <p class="pt-5">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi ipsum
+        similique numquam in voluptate ullam beatae nihil. Autem voluptas magni
+        impedit, commodi illum accusamus ducimus sed officiis laudantium
+        expedita saepe?
+      </p>
+    </main>
+
+    <script src="assets/plugins/persianDate/persian-date.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
