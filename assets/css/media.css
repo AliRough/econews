@@ -1,0 +1,83 @@
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+  #navbarSupportedContent {
+    background-color: transparent !important;
+  }
+
+  .sub-container {
+    transition: all 1000ms;
+    height: 0px;
+    position: absolute;
+    left: 0;
+    top: 80% !important;
+    background: #000;
+    color: white;
+    width: 100%;
+    display: flex;
+    padding: 0 15%;
+    z-index: 99;
+  }
+
+  .main-list-container > li {
+    position: static !important;
+  }
+
+  .main-list-container > li > div {
+    position: absolute;
+  }
+
+  .main-list-container > li:hover {
+    background-color: rgb(53, 53, 53, 0.4);
+  }
+
+  .logo {
+    height: 4rem !important;
+  }
+
+
+}
+
+@media (min-width: 1200px) {
+  .xl\:overflow-visible {
+    overflow: visible !important;
+  }
+
+  .w-xl-1\/6 {
+    width: 16.66% !important;
+  }
+
+  .w-xl-auto {
+    width: auto !important;
+  }
+
+  .sub-container {
+    display: flex;
+    top: 70% !important;
+    padding: 0 20%;
+  }
+}
+
+@media (min-width: 1400px) {
+}
+
+/* ------------------------------ */
+
+@media (max-width: 575.98px) {
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 1399.98px) {
+}
