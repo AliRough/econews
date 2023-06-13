@@ -159,7 +159,7 @@ body {
   padding: 1rem 1rem;
 }
 
-  /* .sub-wraper > li {
+/* .sub-wraper > li {
     width: 50% !important;
   } */
 
@@ -191,10 +191,8 @@ body {
 }
 
 .bottom-list-container > li {
-  width: a;
-  padding: 10px 10px;
+  padding: 10px 0;
   font-size: 13px;
-  border: #000 !important;
 }
 
 .bottom-list-container > li:hover {
@@ -252,12 +250,15 @@ body {
   display: flex;
   width: max-content;
   height: max-content !important;
+  border-right: rgb(33, 37, 41,.2) 1px inset ;
+  padding: 0 10px;
+
 }
 
 .bottom-list-container > li > div {
   position: absolute;
   right: 0;
 }
-.bottom-list-container .sub-wraper>li {
- width: 50% !important;
+.bottom-list-container .sub-wraper > li {
+  width: 50% !important;
 }

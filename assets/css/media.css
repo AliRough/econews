@@ -2,6 +2,10 @@
 }
 
 @media (min-width: 768px) {
+  .bottom-list-container .sub-wraper>li {
+    width: 25% !important;
+   }
+   
 }
 
 @media (min-width: 992px) {
@@ -39,7 +43,9 @@
     height: 60px !important;
     margin: 0px 30px;
   }
-
+  .bottom-list-container .sub-wraper>li {
+    width: 16.6% !important;
+   }
 
 }
 
