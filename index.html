@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="components/swiper/swiper-bundle.css" />
     <link
       rel="stylesheet"
       href="components/bootstrap/dist/css/bootstrap.rtl.min.css"
@@ -21,7 +22,7 @@
     <header class="header-top">
       <div class="container d-flex mv-100 justify-content-between">
         <div class="col d-flex">
-          <div class="date-container d-md-flex align-items-center d-none">
+          <div class="date-container d-md-flex align-items-center d-none ms-5">
             <i class="fa-regular fa-calendar-days"></i>
             <span id="date" class="text-center mx-1">
               سه شنبه ۱۶ خرداد ۱۴۰۲ ۰۳:۳۳:۱۳
@@ -81,9 +82,9 @@
           </div>
         </div>
       </div>
-      <nav class="navbar navbar-expand-lg navbar-light main-header">
+      <nav class="navbar navbar-expand-lg navbar-light main-header py-0">
         <div
-          class="container-lg bg-transparent py-lg-1 d-flex justify-content-between align-items-center flex-wrap flex-xl-nowrap"
+          class="container-lg bg-transparent py-lg-1 py-0 d-flex justify-content-between align-items-center flex-wrap flex-xl-nowrap"
         >
           <span class="max-w-1/2 d-flex">
             <button
@@ -205,9 +206,7 @@
                 ></a>
                 <div class="sub-container dropdown-menu border-0">
                   <div class="dropdown-hover w-100">
-                    <ul
-                      class="data-sub-wraper flex-wrap flex-xl-nowrap text-white"
-                    >
+                    <ul class="sub-wraper flex-wrap flex-xl-nowrap text-white">
                       <li class="border-start ps-1 border-secondary w-50">
                         <a class="d-flex p-2 align-items-center" href="#"
                           ><i
@@ -271,7 +270,7 @@
                 ></a>
                 <div class="sub-container dropdown-menu border-0">
                   <div class="dropdown-hover w-100">
-                    <ul class="data-sub-wraper border-0 flex-wrap text-white">
+                    <ul class="sub-wraper border-0 flex-wrap text-white">
                       <li class="ps-1 w-xl-1/6 w-50 border-secondary my-1">
                         <a class="d-flex p-2 align-items-center" href="#"
                           ><i
@@ -588,9 +587,7 @@
                   aria-labelledby="navbarDropdown"
                 >
                   <div class="dropdown-hover w-100">
-                    <ul
-                      class="data-sub-wraper border-0 flex-wrap flex-xl-nowrap"
-                    >
+                    <ul class="sub-wraper border-0 flex-wrap flex-xl-nowrap">
                       <li
                         class="w-xl-auto col-6 max-w-1/2 bg-black p-2 justify-content-center d-flex"
                       >
@@ -711,7 +708,7 @@
                 >
                   <div class="dropdown-hover w-100">
                     <ul
-                      class="data-sub-wraper border-0 flex-wrap flex-xl-nowrap text-white"
+                      class="sub-wraper border-0 flex-wrap flex-xl-nowrap text-white"
                     >
                       <li class="ps-1 border-secondary w-50">
                         <a class="d-flex p-2 align-items-center" href="#"
@@ -778,7 +775,7 @@
               </li>
             </ul>
           </div>
-          <a href="#" class="navbar-brand order-2 w-1/3 m-0 p-0 logo h-a">
+          <a href="#" class="navbar-brand order-2 w-1/3 p-0 logo h-a">
             <img
               src="assets/img/mahar.png"
               alt=""
@@ -787,21 +784,21 @@
           </a>
         </div>
       </nav>
-
-     
-      <div class="bottom-header overflow-scroll">
+      <div class="bottom-header">
         <div
           class="container bg-transparent d-flex justify-content-between align-items-center"
         >
-          <ul class="bottom-list-container d-flex h-100">
+          <ul
+            class="bottom-list-container d-flex h-100 overflow-x-auto overflow-y-visible"
+          >
             <li>
               <a href="#"> جهان</a>
             </li>
             <li>
               <a href="#"> اکو</a>
               <div class="sub-container">
-                <div class="dropdown-hover w-100">
-                  <ul class="data-sub-wraper flex-wrap">
+                <div class="dropdown-hover vw-100 overflow-hidden">
+                  <ul class="sub-wraper flex-wrap">
                     <li class="border-start ps-1 border-secondary w-1/6 my-1">
                       <a class="d-flex p-2 align-items-center" href="#">
                         صفحه اصلی اکو
@@ -870,7 +867,7 @@
               <a href="#"> کلان و بودجه</a>
               <div class="sub-container">
                 <div class="dropdown-hover w-100">
-                  <ul class="data-sub-wraper">
+                  <ul class="sub-wraper flex-wrap">
                     <li class="ps-1">
                       <a class="d-flex p-2 align-items-center" href="#">
                         ارزها</a
@@ -909,35 +906,170 @@
               <a href="#"> بانک</a>
               <div class="sub-container">
                 <div class="dropdown-hover w-100">
-                  <ul class="data-sub-wraper">
-                    <li class="ps-1">
+                  <ul class="sub-wraper flex-wrap">
+                    <li class="border-start ps-1 border-secondary my-1">
                       <a class="d-flex p-2 align-items-center" href="#">
-                        ارزها</a
+                        صفحه اصلی بانک مرکزی
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بانک ملّی ایران
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بانک توسعه تعاون
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بانک توسعه صادرات ایران</a
                       >
                     </li>
-                    <li class="border-start ps-1 border-secondary">
+                    <li class="border-start ps-1 border-secondary my-1">
                       <a class="d-flex p-2 align-items-center" href="#">
-                        قیمت طلا و سکه</a
+                        قرض الحسنه مهر ایران
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بانک صنعت و معدن
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بانک سپه
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بانک مسکن
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بانک کشاورزی
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        رفاه کارگران</a
                       >
                     </li>
-                    <li class="border-start ps-1 border-secondary">
+                    <li class="border-start ps-1 border-secondary my-1">
                       <a class="d-flex p-2 align-items-center" href="#">
-                        نفت و سوخت</a
+                        پست بانک
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بانک مشترک ایران و ونزوئلا
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بانک ملّت
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بانک تجارت
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بانک صادرات ایران
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بانک ایران زمین
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بانک پاسارگاد
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بانک آینده
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بانک پارسیان
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بانک اقتصادنوین
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بانک دی
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بانک خاورمیانه
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بانک سامان
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بانک سینا
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بانک شهر
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بانک سرمایه
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بانک کارآفرین
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بانک گردشگری
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بانک حکمت ایرانیان
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بانک رسالت
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        صندوق توسعه ملّی
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        مؤسسه ملل</a
                       >
                     </li>
-                    <li class="border-start ps-1 border-secondary">
+                    <li class="border-start ps-1 border-secondary my-1">
                       <a class="d-flex p-2 align-items-center" href="#">
-                        فلزات پایه</a
-                      >
-                    </li>
-                    <li class="border-start ps-1 border-secondary">
-                      <a class="d-flex p-2 align-items-center" href="#">
-                        کالاهای جهانی</a
-                      >
-                    </li>
-                    <li class="border-start ps-1 border-secondary">
-                      <a class="d-flex p-2 align-items-center" href="#">
-                        بورس جهانی</a
+                        عناوین کل اخبار</a
                       >
                     </li>
                   </ul>
@@ -948,35 +1080,165 @@
               <a href="#"> بیمه</a>
               <div class="sub-container">
                 <div class="dropdown-hover w-100">
-                  <ul class="data-sub-wraper">
-                    <li class="ps-1">
+                  <ul class="sub-wraper flex-wrap">
+                    <li class="border-start ps-1 border-secondary my-1">
                       <a class="d-flex p-2 align-items-center" href="#">
-                        ارزها</a
+                        صفحه اصلی بیمه
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بیمه مرکزی
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بیمه توسعه
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بیمه ایران
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بیمه آسیا
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بیمه البرز
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بیمه دانا
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بیمه معلم
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بیمه پارسیان
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بیمه کارآفرین
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بیمه سینا
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بیمه رازی
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بیمه سامان
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بیمه دی
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بیمه ملت
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بیمه نوین
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بیمه پاسارگاد
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بیمه کوثر
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بیمه ما
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بیمه آرمان
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بیمه تعاون
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بیمه سرمد
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بیمه اتکایی ایرانیان
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بیمه اتکایی امین
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بیمه حافظ
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بیمه امید
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بیمه ایران میهن
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بیمه متقابل کیش
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بیمه آسماری
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بیمه حکمت صبا
+                      </a>
+                    </li>
+                    <li class="border-start ps-1 border-secondary my-1">
+                      <a class="d-flex p-2 align-items-center" href="#">
+                        بیمه زندگی خاورمیانه</a
                       >
                     </li>
-                    <li class="border-start ps-1 border-secondary">
+                    <li class="border-start ps-1 border-secondary my-1">
                       <a class="d-flex p-2 align-items-center" href="#">
-                        قیمت طلا و سکه</a
-                      >
-                    </li>
-                    <li class="border-start ps-1 border-secondary">
-                      <a class="d-flex p-2 align-items-center" href="#">
-                        نفت و سوخت</a
-                      >
-                    </li>
-                    <li class="border-start ps-1 border-secondary">
-                      <a class="d-flex p-2 align-items-center" href="#">
-                        فلزات پایه</a
-                      >
-                    </li>
-                    <li class="border-start ps-1 border-secondary">
-                      <a class="d-flex p-2 align-items-center" href="#">
-                        کالاهای جهانی</a
-                      >
-                    </li>
-                    <li class="border-start ps-1 border-secondary">
-                      <a class="d-flex p-2 align-items-center" href="#">
-                        بورس جهانی</a
+                        عناوین کل اخبار</a
                       >
                     </li>
                   </ul>
@@ -1017,12 +1279,29 @@
               <a href="#"> اخبارشرکت ها</a>
             </li>
           </ul>
+          <!-- <div class="swiper">
+            Additional required wrapper
+            <div class="swiper-wrapper">
+              Slides
+              
+            </div>
+            If we need pagination
+            <div class="swiper-pagination d-xl-none"></div>
+
+            If we need navigation buttons
+            <div class="swiper-button-prev d-xl-none"></div>
+            <div class="swiper-button-next d-xl-none"></div>
+
+            If we need scrollbar
+            <div class="swiper-scrollbar d-xl-none"></div>
+          </div> -->
         </div>
       </div>
     </header>
 
     <main></main>
 
+    <script src="components/swiper/swiper-bundle.min.js"></script>
     <script src="assets/plugins/persianDate/persian-date.min.js"></script>
     <script src="assets/js/bootstrap.js"></script>
     <script src="assets/js/script.js"></script>

@@ -34,14 +34,14 @@ body {
   width: 16.66% !important;
 }
 
-.w-max{
+.w-max {
   width: min-content;
 }
-.max-w-1\/2{
+.max-w-1\/2 {
   max-width: 50%;
 }
 
-.header-top{
+.header-top {
   max-width: 100vw;
 }
 
@@ -102,9 +102,9 @@ body {
   height: 20px;
 }
 
-.main-list-container > li {
+/* .main-list-container > li {
   padding: 1.5rem 0;
-}
+} */
 
 .main-list-container > li > a {
   text-decoration: none;
@@ -152,21 +152,22 @@ body {
   padding-right: 0.2rem;
 }
 
-.data-sub-wraper {
+.sub-wraper {
   display: flex;
   width: 100%;
+  max-width: 100vw;
   padding: 1rem 1rem;
 }
 
-.data-sub-wraper > li {
-  width: 100%;
-}
+  /* .sub-wraper > li {
+    width: 50% !important;
+  } */
 
-.data-sub-wraper a:hover {
+.sub-wraper a:hover {
   background-color: var(--primary);
 }
 
-.data-sub-wraper .azad-hover {
+.sub-wraper .azad-hover {
   background-color: white;
 }
 
@@ -210,7 +211,6 @@ body {
   color: #000;
 }
 
-
 /* 
 **  عوض کردن سه تایی رنگ  
 */
@@ -233,8 +233,31 @@ body {
   color: #fff;
 }
 
-.dropdown-menu{
+.dropdown-menu {
   position: static;
   background: #000 !important;
   margin-top: 12px !important;
+}
+
+.bottom-list-container .sub-container {
+  top: 100% !important;
+}
+
+.bottom-list-container {
+  width: max-content !important;
+  /* height: 30px!important; */
+}
+
+.bottom-list-container > li > a {
+  display: flex;
+  width: max-content;
+  height: max-content !important;
+}
+
+.bottom-list-container > li > div {
+  position: absolute;
+  right: 0;
+}
+.bottom-list-container .sub-wraper>li {
+ width: 50% !important;
 }
